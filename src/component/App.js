@@ -1,9 +1,15 @@
 import React, { Component } from "react";
+import { Wallet } from "./Wallet";
 
 class App extends Component {
   render(){
     return (
-      <div>Loot Check</div>
+      <div>
+        <div>Loot Check</div>
+        <hr />
+        <Wallet />
+      </div>
+      
     )
   }
 }
