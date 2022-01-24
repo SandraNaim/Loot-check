@@ -7,7 +7,7 @@ import { fetchBitcoin } from './bitcoin'
 
 const createMockStore = configureMockStore([thunk]);
 const store = createMockStore({ bitcoing: {} });
-const mockResponse = { body: { bpi: 'bitcoin price index' } };
+const mockResponse = { body: { bpi: 'bitcoin price index' }};
 
 fetchMock.get('https://api.coindesk.com/v1/bpi/currentprice.json', mockResponse);
 

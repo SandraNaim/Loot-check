@@ -17,7 +17,7 @@ export class Loot extends Component {
 
     render(){
         return (
-            <h3>Bitcoin Balance: {this.computeBitcoin}</h3>
+            <h3>Bitcoin Balance: {this.computeBitcoin()}</h3>
         )
     }
 }
@@ -26,4 +26,4 @@ const mapStateToProps = (state) => {
     return { state }
 }
 
-export default connect(state => state, { fetchBitcoin })(Loot);
+export default connect(state => state, { fetchBitcoin }  )(Loot);

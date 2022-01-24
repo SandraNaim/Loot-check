@@ -3,7 +3,7 @@ import { mount, shallow } from "enzyme";
 import { Loot } from './Loot';
 
 describe('Loot', () => {
-    const props = { balance: 10, bitcoin: {} }
+    let props = { balance: 10, bitcoin: {} }
     let loot = shallow(<Loot {...props} />);
 
     it('renders correctly', () => {
@@ -29,7 +29,7 @@ describe('Loot', () => {
         })
 
         it('displays the correct bitcoin value', () => {
-            expect(loot.find('h3').text()).toEqual('Bitcoin balance: 0.01');
+            expect(loot.find('h3').text()).toEqual('Bitcoin Balance: 0.01');
         })
     })
 })
